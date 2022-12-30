@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 19.3.0
+      - name: Use Node.js 14.0.0
         uses: actions/setup-node@v1
         with:
-          node-version: 19.3.0
+          node-version: 14.0.0
       - run: yarn
       - run: yarn build
       - run: yarn test 
